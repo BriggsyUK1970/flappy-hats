@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2018 Igor Rozani
+//
+// SPDX-License-Identifier: MIT
+
 /**
  * 
  * Game configurations.
