@@ -10,7 +10,7 @@
     ],
     "start_url": "/",
     "display": "standalone",
-    "description":"Customizable Flappy Bird clone",
+    "description":"A customizable Flappy Bird clone",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "scope": "/"
