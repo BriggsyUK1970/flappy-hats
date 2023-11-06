@@ -188,44 +188,66 @@ let score
  *   Load the game assets.
  */
 function preload() {
+    this.load.on('loaderror', (reqinfo)=>{
+        if (reqinfo.src.includes("custom")) {
+            if (reqinfo.type == "spritesheet" && reqinfo.key == "bird") {
+                this.load.spritesheet(assets.bird, 'assets/bird-sprite.png', {
+                    frameWidth: 34,
+                    frameHeight: 24
+                })
+            }
+            if (reqinfo.type == "spritesheet" && reqinfo.key == "ground") {
+                this.load.spritesheet(assets.scene.ground, 'assets/ground-sprite.png', {
+                    frameWidth: 336,
+                    frameHeight: 112
+                })
+            }
+            if (reqinfo.type == "image") {
+                this.load.image(reqinfo.key, reqinfo.src.replace("custom", "assets"))
+            }
+        } else {
+            console.log(reqinfo);
+        }
+    })
+
     // Backgrounds and ground
-    this.load.image(assets.scene.background.day, 'assets/background-day.png')
-    this.load.image(assets.scene.background.night, 'assets/background-night.png')
-    this.load.spritesheet(assets.scene.ground, 'assets/ground-sprite.png', {
+    this.load.image(assets.scene.background.day, 'custom/background-day.png')
+    this.load.image(assets.scene.background.night, 'custom/background-night.png')
+    this.load.spritesheet(assets.scene.ground, 'custom/ground-sprite.png', {
         frameWidth: 336,
         frameHeight: 112
     })
 
     // Pipes
-    this.load.image(assets.obstacle.pipe.green.top, 'assets/pipe-green-top.png')
-    this.load.image(assets.obstacle.pipe.green.bottom, 'assets/pipe-green-bottom.png')
-    this.load.image(assets.obstacle.pipe.red.top, 'assets/pipe-red-top.png')
-    this.load.image(assets.obstacle.pipe.red.bottom, 'assets/pipe-red-bottom.png')
+    this.load.image(assets.obstacle.pipe.green.top, 'custom/pipe-green-top.png')
+    this.load.image(assets.obstacle.pipe.green.bottom, 'custom/pipe-green-bottom.png')
+    this.load.image(assets.obstacle.pipe.red.top, 'custom/pipe-red-top.png')
+    this.load.image(assets.obstacle.pipe.red.bottom, 'custom/pipe-red-bottom.png')
 
     // Start game
-    this.load.image(assets.scene.messageInitial, 'assets/message-initial.png')
+    this.load.image(assets.scene.messageInitial, 'custom/message-initial.png')
 
     // End game
-    this.load.image(assets.scene.gameOver, 'assets/gameover.png')
-    this.load.image(assets.scene.restart, 'assets/restart-button.png')
+    this.load.image(assets.scene.gameOver, 'custom/gameover.png')
+    this.load.image(assets.scene.restart, 'custom/restart-button.png')
 
     // Bird
-    this.load.spritesheet(assets.bird, 'assets/bird-sprite.png', {
-        frameWidth: 34,
-        frameHeight: 24
+    this.load.spritesheet(assets.bird, 'custom/bird-sprite.png', {
+            frameWidth: 34,
+            frameHeight: 24
     })
 
     // Numbers
-    this.load.image(assets.scoreboard.number0, 'assets/number0.png')
-    this.load.image(assets.scoreboard.number1, 'assets/number1.png')
-    this.load.image(assets.scoreboard.number2, 'assets/number2.png')
-    this.load.image(assets.scoreboard.number3, 'assets/number3.png')
-    this.load.image(assets.scoreboard.number4, 'assets/number4.png')
-    this.load.image(assets.scoreboard.number5, 'assets/number5.png')
-    this.load.image(assets.scoreboard.number6, 'assets/number6.png')
-    this.load.image(assets.scoreboard.number7, 'assets/number7.png')
-    this.load.image(assets.scoreboard.number8, 'assets/number8.png')
-    this.load.image(assets.scoreboard.number9, 'assets/number9.png')
+    this.load.image(assets.scoreboard.number0, 'custom/number0.png')
+    this.load.image(assets.scoreboard.number1, 'custom/number1.png')
+    this.load.image(assets.scoreboard.number2, 'custom/number2.png')
+    this.load.image(assets.scoreboard.number3, 'custom/number3.png')
+    this.load.image(assets.scoreboard.number4, 'custom/number4.png')
+    this.load.image(assets.scoreboard.number5, 'custom/number5.png')
+    this.load.image(assets.scoreboard.number6, 'custom/number6.png')
+    this.load.image(assets.scoreboard.number7, 'custom/number7.png')
+    this.load.image(assets.scoreboard.number8, 'custom/number8.png')
+    this.load.image(assets.scoreboard.number9, 'custom/number9.png')
 }
 
 /**
