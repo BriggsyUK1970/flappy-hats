@@ -246,7 +246,7 @@ function create() {
     ground.setCollideWorldBounds(true)
     ground.setDepth(10)
 
-    messageInitial = this.add.image(assets.scene.width, 156, assets.scene.messageInitial)
+    messageInitial = this.add.image(assets.scene.width, 256, assets.scene.messageInitial)
     messageInitial.setDepth(30)
     messageInitial.visible = false
 
