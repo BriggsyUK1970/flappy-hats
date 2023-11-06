@@ -32,11 +32,7 @@ const configurations = {
  *  @name assets
  */
 const assets = {
-    bird: {
-        red: 'bird-red',
-        yellow: 'bird-yellow',
-        blue: 'bird-blue'
-    },
+    bird: 'bird',
     obstacle: {
         pipe: {
             green: {
@@ -76,18 +72,8 @@ const assets = {
     },
     animation: {
         bird: {
-            red: {
-                clapWings: 'red-clap-wings',
-                stop: 'red-stop'
-            },
-            blue: {
-                clapWings: 'blue-clap-wings',
-                stop: 'blue-stop'
-            },
-            yellow: {
-                clapWings: 'yellow-clap-wings',
-                stop: 'yellow-stop'
-            }
+            clapWings: 'clap-wings',
+            stop: 'stop-clap'
         },
         ground: {
             moving: 'moving-ground',
@@ -223,16 +209,8 @@ function preload() {
     this.load.image(assets.scene.gameOver, 'assets/gameover.png')
     this.load.image(assets.scene.restart, 'assets/restart-button.png')
 
-    // Birds
-    this.load.spritesheet(assets.bird.red, 'assets/bird-red-sprite.png', {
-        frameWidth: 34,
-        frameHeight: 24
-    })
-    this.load.spritesheet(assets.bird.blue, 'assets/bird-blue-sprite.png', {
-        frameWidth: 34,
-        frameHeight: 24
-    })
-    this.load.spritesheet(assets.bird.yellow, 'assets/bird-yellow-sprite.png', {
+    // Bird
+    this.load.spritesheet(assets.bird, 'assets/bird-sprite.png', {
         frameWidth: 34,
         frameHeight: 24
     })
@@ -293,10 +271,10 @@ function create() {
         frameRate: 20
     })
 
-    // Red Bird Animations
+    // Bird Animations
     this.anims.create({
-        key: assets.animation.bird.red.clapWings,
-        frames: this.anims.generateFrameNumbers(assets.bird.red, {
+        key: assets.animation.bird.clapWings,
+        frames: this.anims.generateFrameNumbers(assets.bird, {
             start: 0,
             end: 2
         }),
@@ -304,47 +282,9 @@ function create() {
         repeat: -1
     })
     this.anims.create({
-        key: assets.animation.bird.red.stop,
+        key: assets.animation.bird.stop,
         frames: [{
-            key: assets.bird.red,
-            frame: 1
-        }],
-        frameRate: 20
-    })
-
-    // Blue Bird animations
-    this.anims.create({
-        key: assets.animation.bird.blue.clapWings,
-        frames: this.anims.generateFrameNumbers(assets.bird.blue, {
-            start: 0,
-            end: 2
-        }),
-        frameRate: 10,
-        repeat: -1
-    })
-    this.anims.create({
-        key: assets.animation.bird.blue.stop,
-        frames: [{
-            key: assets.bird.blue,
-            frame: 1
-        }],
-        frameRate: 20
-    })
-
-    // Yellow Bird animations
-    this.anims.create({
-        key: assets.animation.bird.yellow.clapWings,
-        frames: this.anims.generateFrameNumbers(assets.bird.yellow, {
-            start: 0,
-            end: 2
-        }),
-        frameRate: 10,
-        repeat: -1
-    })
-    this.anims.create({
-        key: assets.animation.bird.yellow.stop,
-        frames: [{
-            key: assets.bird.yellow,
+            key: assets.bird,
             frame: 1
         }],
         frameRate: 20
@@ -411,7 +351,7 @@ function hitBird(player) {
     gameOver = true
     gameStarted = false
 
-    player.anims.play(getAnimationBird(birdName).stop)
+    player.anims.play(assets.animation.bird.stop)
     ground.anims.play(assets.animation.ground.stop)
 
     gameOverBanner.visible = true
@@ -477,39 +417,6 @@ function moveBird() {
 }
 
 /**
- * Get a random bird color.
- * @return {string} Bird color asset.
- */
-function getRandomBird() {
-    switch (Phaser.Math.Between(0, 2)) {
-        case 0:
-            return assets.bird.red
-        case 1:
-            return assets.bird.blue
-        case 2:
-        default:
-            return assets.bird.yellow
-    }
-}
-
-/**
- * Get the animation name from the bird.
- * @param {string} birdColor - Game bird color asset.
- * @return {object} - Bird animation asset.
- */
-function getAnimationBird(birdColor) {
-    switch (birdColor) {
-        case assets.bird.red:
-            return assets.animation.bird.red
-        case assets.bird.blue:
-            return assets.animation.bird.blue
-        case assets.bird.yellow:
-        default:
-            return assets.animation.bird.yellow
-    }
-}
-
-/**
  * Update the game scoreboard.
  */
 function updateScoreboard() {
@@ -561,10 +468,10 @@ function prepareGame(scene) {
     backgroundNight.visible = false
     messageInitial.visible = true
 
-    birdName = getRandomBird()
+    birdName = assets.bird
     player = scene.physics.add.sprite(60, 265, birdName)
     player.setCollideWorldBounds(true)
-    player.anims.play(getAnimationBird(birdName).clapWings, true)
+    player.anims.play(assets.animation.bird.clapWings, true)
     player.body.allowGravity = false
 
     scene.physics.add.collider(player, ground, hitBird, null, scene)
