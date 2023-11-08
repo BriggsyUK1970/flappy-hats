@@ -5,3 +5,7 @@
  */
 
 body { margin: 0px }
+@font-face {
+    font-family: "GajrajOne";
+    src: url("../assets/GajrajOne-Regular.ttf") format("truetype");
+}

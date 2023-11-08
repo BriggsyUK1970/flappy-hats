@@ -32,6 +32,7 @@ const configurations = {
  *  @name assets
  */
 const assets = {
+    gametitle: 'gametitle',
     bird: 'bird',
     obstacle: {
         pipe: {
@@ -205,6 +206,10 @@ function preload() {
             if (reqinfo.type == "image") {
                 this.load.image(reqinfo.key, reqinfo.src.replace("custom", "assets"))
             }
+            if (reqinfo.type == "text" && reqinfo.key == "gametitle") {
+                this.load.text(assets.gametitle, 'assets/title.txt');
+            }
+            console.log(reqinfo);
         } else {
             console.log(reqinfo);
         }
@@ -248,6 +253,9 @@ function preload() {
     this.load.image(assets.scoreboard.number7, 'custom/number7.png')
     this.load.image(assets.scoreboard.number8, 'custom/number8.png')
     this.load.image(assets.scoreboard.number9, 'custom/number9.png')
+
+    // Game title
+    this.load.text(assets.gametitle, 'custom/title.txt');
 }
 
 /**
@@ -271,6 +279,12 @@ function create() {
     messageInitial = this.add.image(assets.scene.width, 256, assets.scene.messageInitial)
     messageInitial.setDepth(30)
     messageInitial.visible = false
+
+    // Game title
+    messageInitialGameTitle = this.add.text(assets.scene.width, 100, this.cache.text.get(assets.gametitle), {
+        fontFamily: 'GajrajOne', fontSize: 32
+    }).setOrigin(0.5);
+    messageInitialGameTitle.visible = false
 
     upButton = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP)
 
@@ -489,6 +503,7 @@ function prepareGame(scene) {
     backgroundDay.visible = true
     backgroundNight.visible = false
     messageInitial.visible = true
+    messageInitialGameTitle.visible = true
 
     birdName = assets.bird
     player = scene.physics.add.sprite(60, 265, birdName)
@@ -511,6 +526,7 @@ function prepareGame(scene) {
 function startGame(scene) {
     gameStarted = true
     messageInitial.visible = false
+    messageInitialGameTitle.visible = false
 
     const score0 = scoreboardGroup.create(assets.scene.width, 30, assets.scoreboard.number0)
     score0.setDepth(20)
