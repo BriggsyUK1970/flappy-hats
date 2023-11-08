@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Flappy Any
+Upstream-Name: Flappy Mascot
 Upstream-Contact: Dominik Wombacher <dominik@wombacher.cc>
-Source: https://git.sr.ht/~wombelix/flappyany
+Source: https://git.sr.ht/~wombelix/flappy-mascot
 
 # Sample paragraph, commented out:
 #

@@ -4,11 +4,11 @@ SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc>
 SPDX-License-Identifier: MIT
 -->
 
-# Flappy Any ![Flappy Any](img/favicon.png)
+# Flappy Mascot ![Flappy Mascot](img/favicon.png)
 
-A customizable Flappy Bird clone. 
+A customizable Flappy Bird clone, with Tux as default Mascot.
 
-You can flap around **any**thing you want. Use the default, or play with whatever motive you like and have some fun!
+Add [custom assets](custom/README.md) and flap around **any**thing you want. Use the default, or play with whatever motive you like and have some fun!
 
 Based on [Flappy Bird](https://github.com/IgorRozani/flappy-bird) 
 from [Igor Rozani](https://github.com/IgorRozani).
@@ -33,12 +33,12 @@ If you prefer nodejs, install the http server `npm install http-server -g` and r
 
 ## Source
 
-The primary location is: https://git.sr.ht/~wombelix/flappyany
+The primary location is: https://git.sr.ht/~wombelix/flappy-mascot
 
 Mirrors of the repository are available on 
-[Codeberg](https://codeberg.org/wombelix/flappyany), 
-[Gitlab](https://gitlab.com/wombelix/flappyany) and 
-[Github](https://github.com/wombelix/flappyany).
+[Codeberg](https://codeberg.org/wombelix/flappy-mascot), 
+[Gitlab](https://gitlab.com/wombelix/flappy-mascot) and 
+[Github](https://github.com/wombelix/flappy-mascot).
 
 ## Contribute
 
