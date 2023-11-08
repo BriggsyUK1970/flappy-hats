@@ -189,25 +189,27 @@ let score
  *   Load the game assets.
  */
 function preload() {
+    var ts = Math.round(+new Date()/1000);
+
     this.load.on('loaderror', (reqinfo)=>{
         if (reqinfo.src.includes("custom")) {
             if (reqinfo.type == "spritesheet" && reqinfo.key == "bird") {
-                this.load.spritesheet(assets.bird, 'assets/bird-sprite.png', {
+                this.load.spritesheet(assets.bird, 'assets/bird-sprite.png?v='+ts, {
                     frameWidth: 34,
                     frameHeight: 24
                 })
             }
             if (reqinfo.type == "spritesheet" && reqinfo.key == "ground") {
-                this.load.spritesheet(assets.scene.ground, 'assets/ground-sprite.png', {
+                this.load.spritesheet(assets.scene.ground, 'assets/ground-sprite.png?v='+ts, {
                     frameWidth: 336,
                     frameHeight: 112
                 })
             }
             if (reqinfo.type == "image") {
-                this.load.image(reqinfo.key, reqinfo.src.replace("custom", "assets"))
+                this.load.image(reqinfo.key, reqinfo.src.replace("custom", "assets")+'?v='+ts)
             }
             if (reqinfo.type == "text" && reqinfo.key == "gametitle") {
-                this.load.text(assets.gametitle, 'assets/title.txt');
+                this.load.text(assets.gametitle, 'assets/title.txt?v='+ts);
             }
             console.log(reqinfo);
         } else {
@@ -216,46 +218,46 @@ function preload() {
     })
 
     // Backgrounds and ground
-    this.load.image(assets.scene.background.day, 'custom/background-day.png')
-    this.load.image(assets.scene.background.night, 'custom/background-night.png')
-    this.load.spritesheet(assets.scene.ground, 'custom/ground-sprite.png', {
+    this.load.image(assets.scene.background.day, 'custom/background-day.png?v='+ts)
+    this.load.image(assets.scene.background.night, 'custom/background-night.png?v='+ts)
+    this.load.spritesheet(assets.scene.ground, 'custom/ground-sprite.png?v='+ts, {
         frameWidth: 336,
         frameHeight: 112
     })
 
     // Pipes
-    this.load.image(assets.obstacle.pipe.green.top, 'custom/pipe-green-top.png')
-    this.load.image(assets.obstacle.pipe.green.bottom, 'custom/pipe-green-bottom.png')
-    this.load.image(assets.obstacle.pipe.red.top, 'custom/pipe-red-top.png')
-    this.load.image(assets.obstacle.pipe.red.bottom, 'custom/pipe-red-bottom.png')
+    this.load.image(assets.obstacle.pipe.green.top, 'custom/pipe-green-top.png?v='+ts)
+    this.load.image(assets.obstacle.pipe.green.bottom, 'custom/pipe-green-bottom.png?v='+ts)
+    this.load.image(assets.obstacle.pipe.red.top, 'custom/pipe-red-top.png?v='+ts)
+    this.load.image(assets.obstacle.pipe.red.bottom, 'custom/pipe-red-bottom.png?v='+ts)
 
     // Start game
-    this.load.image(assets.scene.messageInitial, 'custom/message-initial.png')
+    this.load.image(assets.scene.messageInitial, 'custom/message-initial.png?v='+ts)
 
     // End game
-    this.load.image(assets.scene.gameOver, 'custom/gameover.png')
-    this.load.image(assets.scene.restart, 'custom/restart-button.png')
+    this.load.image(assets.scene.gameOver, 'custom/gameover.png?v='+ts)
+    this.load.image(assets.scene.restart, 'custom/restart-button.png?v='+ts)
 
     // Bird
-    this.load.spritesheet(assets.bird, 'custom/bird-sprite.png', {
+    this.load.spritesheet(assets.bird, 'custom/bird-sprite.png?v='+ts, {
             frameWidth: 34,
             frameHeight: 24
     })
 
     // Numbers
-    this.load.image(assets.scoreboard.number0, 'custom/number0.png')
-    this.load.image(assets.scoreboard.number1, 'custom/number1.png')
-    this.load.image(assets.scoreboard.number2, 'custom/number2.png')
-    this.load.image(assets.scoreboard.number3, 'custom/number3.png')
-    this.load.image(assets.scoreboard.number4, 'custom/number4.png')
-    this.load.image(assets.scoreboard.number5, 'custom/number5.png')
-    this.load.image(assets.scoreboard.number6, 'custom/number6.png')
-    this.load.image(assets.scoreboard.number7, 'custom/number7.png')
-    this.load.image(assets.scoreboard.number8, 'custom/number8.png')
-    this.load.image(assets.scoreboard.number9, 'custom/number9.png')
+    this.load.image(assets.scoreboard.number0, 'custom/number0.png?v='+ts)
+    this.load.image(assets.scoreboard.number1, 'custom/number1.png?v='+ts)
+    this.load.image(assets.scoreboard.number2, 'custom/number2.png?v='+ts)
+    this.load.image(assets.scoreboard.number3, 'custom/number3.png?v='+ts)
+    this.load.image(assets.scoreboard.number4, 'custom/number4.png?v='+ts)
+    this.load.image(assets.scoreboard.number5, 'custom/number5.png?v='+ts)
+    this.load.image(assets.scoreboard.number6, 'custom/number6.png?v='+ts)
+    this.load.image(assets.scoreboard.number7, 'custom/number7.png?v='+ts)
+    this.load.image(assets.scoreboard.number8, 'custom/number8.png?v='+ts)
+    this.load.image(assets.scoreboard.number9, 'custom/number9.png?v='+ts)
 
     // Game title
-    this.load.text(assets.gametitle, 'custom/title.txt');
+    this.load.text(assets.gametitle, 'custom/title.txt?v='+ts);
 }
 
 /**
@@ -281,7 +283,8 @@ function create() {
     messageInitial.visible = false
 
     // Game title
-    messageInitialGameTitle = this.add.text(assets.scene.width, 100, this.cache.text.get(assets.gametitle), {
+    const gametitle = this.cache.text.get(assets.gametitle)
+    messageInitialGameTitle = this.add.text(assets.scene.width, 100, gametitle, {
         fontFamily: 'GajrajOne', fontSize: 32
     }).setOrigin(0.5);
     messageInitialGameTitle.visible = false
