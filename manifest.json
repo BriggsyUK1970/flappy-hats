@@ -10,7 +10,7 @@
     ],
     "start_url": "/",
     "display": "standalone",
-    "description":"A customizable Flappy Bird clone, with Tux as default Mascot",
+    "description":"A customizable Flappy Bird clone, with Tux as default Mascot.",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "scope": "/"

@@ -13,6 +13,8 @@ Add [custom assets](custom/README.md) and flap around **any**thing you want. Use
 Based on [Flappy Bird](https://github.com/IgorRozani/flappy-bird) 
 from [Igor Rozani](https://github.com/IgorRozani).
 
+[![REUSE status](https://api.reuse.software/badge/git.sr.ht/~wombelix/flappy-mascot)](https://api.reuse.software/info/git.sr.ht/~wombelix/flappy-mascot)
+
 ## Table of Contents
 
 * [How to run](#how-to-run)
