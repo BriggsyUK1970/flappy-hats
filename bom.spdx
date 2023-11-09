@@ -1,0 +1,280 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: flappy-mascot
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-8226f43f-ac0e-4c53-899d-24aa3862fefb
+Creator: Person: Anonymous ()
+Creator: Organization: Anonymous ()
+Creator: Tool: reuse-1.1.2
+Created: 2023-11-09T13:16:55Z
+CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-15f3b53bb8a52ce4655edf3b50f32f63
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-01ab02194cb3da51222abcdb9a181a80
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-134be57d5ef2f35c96af6e0294696380
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d00a639236e792f655747378c1c1b64d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ce11a86aa6e34adfdca1ee689f344686
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-aecd6c818a14bc96f9b620ed272cf404
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-eece3cf077b0ca72defc761ccc5bcc88
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e98fbfe2b8c4c24865ad99350b34b2fa
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7e6faf6f7cfb626f6b58021fcd0282b5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-99f0beee400b5470f2a3199dcae6cdef
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-871691350e7c78a48ee99bebdc9ed13f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-217804aec1165b155b417da05134ac28
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-cc149a7a0276fe3971a4a2dfc4e0d223
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e9692a0976c69b84fac46de34b56d613
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0bd6edbc09561aaaff9001c5c1491f7d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6afb57b1a3ab73dd226aa7a61d9bf7da
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d512db7db9e11288c33f6400158ce3bd
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2b778df9f7dea76ca36e8892fec1459b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3c448e93e87e86666900a34e36b80b73
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-beccdd98562912e27ef06cf012e75878
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0fedb203900b63cff74d876c4e33e3e9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-45e996ab747e04d343a05bf7cfa51843
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5e24fe307116696ac8d002a6a2cc9832
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-15a19a231326740b5dabaf3304f67103
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-bd06f6e0f691520f33322c7093c00cd7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ad29471ccc86786832fe6edca8360c47
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-458e20f1b389d3fcda4cafab907cf730
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5a646c507cd83c28f435f08d344983be
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f38bd71daec5fe6f6dc8712248a6a39d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f84cffa36757227650acbcd9e1e14bbf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f1b6b2606ec254677b074b2c4b7f157e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a3ba687c8880c38f9b1d0509335af5e8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-167140d3d52710e3a2ff2a2f2c44dd7e
+
+FileName: ./README.md
+SPDXID: SPDXRef-15f3b53bb8a52ce4655edf3b50f32f63
+FileChecksum: SHA1: 798063be49fe78cb989a7acd5a194fc4b4ae701c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./assets/GajrajOne-Regular.ttf
+SPDXID: SPDXRef-01ab02194cb3da51222abcdb9a181a80
+FileChecksum: SHA1: 33a1863d5dec518246070a71cc3f1805b57444a1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 The Gajrajone Project Authors</text>
+
+FileName: ./assets/alternative/bird-blue-sprite.png
+SPDXID: SPDXRef-134be57d5ef2f35c96af6e0294696380
+FileChecksum: SHA1: 3727adf5a2507e0809f8a779e3ef0baee73ba72e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/alternative/bird-red-sprite.png
+SPDXID: SPDXRef-d00a639236e792f655747378c1c1b64d
+FileChecksum: SHA1: 987ee1316400331a2f1389a3d5489f7a72d7ba68
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/background-day.png
+SPDXID: SPDXRef-ce11a86aa6e34adfdca1ee689f344686
+FileChecksum: SHA1: dfe29ff1a0a01c8644e9ca243d89d15f8d78f9b6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/background-night.png
+SPDXID: SPDXRef-aecd6c818a14bc96f9b620ed272cf404
+FileChecksum: SHA1: 0ab359a898240a4d4ad453f552fae1f3b76eec50
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/bird-sprite.png
+SPDXID: SPDXRef-eece3cf077b0ca72defc761ccc5bcc88
+FileChecksum: SHA1: 3bb524f82a7bc45c82459eefa613a63b6c3fe6f1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2010 Maxo
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./assets/gameover.png
+SPDXID: SPDXRef-e98fbfe2b8c4c24865ad99350b34b2fa
+FileChecksum: SHA1: 4c33c4632fcda72064d414270d328607b4885e44
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/ground-sprite.png
+SPDXID: SPDXRef-7e6faf6f7cfb626f6b58021fcd0282b5
+FileChecksum: SHA1: a44f951f4c80bed6ff6cdebc7bf6d21c065c0149
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/message-initial.png
+SPDXID: SPDXRef-99f0beee400b5470f2a3199dcae6cdef
+FileChecksum: SHA1: dfbc0263055746e73a1c89a8e65455c226bc5d0f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./assets/number0.png
+SPDXID: SPDXRef-871691350e7c78a48ee99bebdc9ed13f
+FileChecksum: SHA1: c365ec74f07c87b4c43bd1af5695ddb1b4d3065d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number1.png
+SPDXID: SPDXRef-217804aec1165b155b417da05134ac28
+FileChecksum: SHA1: 5168cd52a49494fe9f61850ce60faa4a269a93d7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number2.png
+SPDXID: SPDXRef-cc149a7a0276fe3971a4a2dfc4e0d223
+FileChecksum: SHA1: 3bc76d7542e1d569e34020a73cf9a39778a40bb4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number3.png
+SPDXID: SPDXRef-e9692a0976c69b84fac46de34b56d613
+FileChecksum: SHA1: a63afdbffbe497a92fc1ff2e57cfc22825cf70d6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number4.png
+SPDXID: SPDXRef-0bd6edbc09561aaaff9001c5c1491f7d
+FileChecksum: SHA1: 9d623954d420699762576ba27159ef6cd076ab3d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number5.png
+SPDXID: SPDXRef-6afb57b1a3ab73dd226aa7a61d9bf7da
+FileChecksum: SHA1: 770c13f024be5ff74a61fd654f293ac973c98dab
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number6.png
+SPDXID: SPDXRef-d512db7db9e11288c33f6400158ce3bd
+FileChecksum: SHA1: f0957dc9c7a07d6a33e1150262bb57010e5a395b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number7.png
+SPDXID: SPDXRef-2b778df9f7dea76ca36e8892fec1459b
+FileChecksum: SHA1: 1abe3379cb241df950764ce1f096630b91527051
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number8.png
+SPDXID: SPDXRef-3c448e93e87e86666900a34e36b80b73
+FileChecksum: SHA1: 396d2ade4e38c92c98afc20e282d269c44e367e3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/number9.png
+SPDXID: SPDXRef-beccdd98562912e27ef06cf012e75878
+FileChecksum: SHA1: 77f5cad1e58b7c6c2ae6dd98fce4955f76e87ae1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/pipe-green-bottom.png
+SPDXID: SPDXRef-0fedb203900b63cff74d876c4e33e3e9
+FileChecksum: SHA1: ea62947656500e9724e0a06feec599761a4b9b50
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/pipe-green-top.png
+SPDXID: SPDXRef-45e996ab747e04d343a05bf7cfa51843
+FileChecksum: SHA1: 5d5f3d32964a326bd6151768455d2131faafa52c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/pipe-red-bottom.png
+SPDXID: SPDXRef-5e24fe307116696ac8d002a6a2cc9832
+FileChecksum: SHA1: c5a55c28dcc291b27fa650b01444729e07f8e7fc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/pipe-red-top.png
+SPDXID: SPDXRef-15a19a231326740b5dabaf3304f67103
+FileChecksum: SHA1: 60ac317bece16cd52b5a5c6bb085a413e656d8d1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/restart-button.png
+SPDXID: SPDXRef-bd06f6e0f691520f33322c7093c00cd7
+FileChecksum: SHA1: d67a085fa23d5fcd90d7910d172d26099ac849fc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2014 Sourabh Verma</text>
+
+FileName: ./assets/title.txt
+SPDXID: SPDXRef-ad29471ccc86786832fe6edca8360c47
+FileChecksum: SHA1: c19734100a32f5c4b3390c95545346bd44812403
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./css/site.css
+SPDXID: SPDXRef-458e20f1b389d3fcda4cafab907cf730
+FileChecksum: SHA1: a7abfc23ad9ce036217fefc1ac3d299be6a4e048
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2018 Igor Rozani
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./custom/README.md
+SPDXID: SPDXRef-5a646c507cd83c28f435f08d344983be
+FileChecksum: SHA1: 04fa1721e86e44ab61e0dec0c255f16341c8328c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./dist/phaser.min.js
+SPDXID: SPDXRef-f38bd71daec5fe6f6dc8712248a6a39d
+FileChecksum: SHA1: dce9e0e586e6bddf6a97617e71c5da2e7563de74
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2020 Richard Davey, Photon Storm Ltd.</text>
+
+FileName: ./img/favicon.png
+SPDXID: SPDXRef-f84cffa36757227650acbcd9e1e14bbf
+FileChecksum: SHA1: 0fd00ec3b9ec29ebfd1d84e32d4c88cd130918ad
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2010 Maxo
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./index.html
+SPDXID: SPDXRef-f1b6b2606ec254677b074b2c4b7f157e
+FileChecksum: SHA1: d93de6d1faa90967c53242d64fade355f1112210
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2018 Igor Rozani
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
+
+FileName: ./js/game.js
+SPDXID: SPDXRef-a3ba687c8880c38f9b1d0509335af5e8
+FileChecksum: SHA1: ee54e712a7fe7b5ec556a459affac80b6705f6e0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2018 Igor Rozani</text>
+
+FileName: ./manifest.json
+SPDXID: SPDXRef-167140d3d52710e3a2ff2a2f2c44dd7e
+FileChecksum: SHA1: 67bbdfc67d06502636a022032d98ea1d7e5e9ae3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2018 Igor Rozani
+SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc></text>
