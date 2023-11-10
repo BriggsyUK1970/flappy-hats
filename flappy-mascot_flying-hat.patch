@@ -1,0 +1,95 @@
+diff --git a/README.md b/README.md
+index 078178c..99d4c24 100644
+--- a/README.md
++++ b/README.md
+@@ -4,6 +4,18 @@ SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc>
+ SPDX-License-Identifier: MIT
+ -->
+ 
++# Customized: Flying Hat
++
++Inspired by @willgrod, a Flappy Bird clone with the `Red Hat*` logo as mascot.
++
++Co-brand to be used during talks or GameDays to engage with the audience and if a funny app is required.
++
++Based on a open source project (see below) that only uses [Pre-Approved internal use Licenses](https://policy.a2z.com/docs/82475/publication), namely: MIT, CC0-1.0 and OFL-1.1.
++
++_*Copyright © 2023 Red Hat, Inc. Red Hat, and the Red Hat logo are trademarks or registered trademarks of Red Hat, Inc. or its subsidiaries in the United States and other countries. All other trademarks are the property of their respective owners._
++
++-----
++
+ # Flappy Mascot ![Flappy Mascot](img/favicon.png)
+ 
+ A customizable Flappy Bird clone, with Tux as default Mascot.
+@@ -62,4 +74,4 @@ Unless otherwise stated: `MIT`
+ 
+ All files contain license information either as `header comment` or `corresponding .license` file.
+ 
+-[REUSE](https://reuse.software) from the [FSFE](https://fsfe.org/) implemented to verify license and copyright compliance.
+\ No newline at end of file
++[REUSE](https://reuse.software) from the [FSFE](https://fsfe.org/) implemented to verify license and copyright compliance.
+diff --git a/custom/bird-sprite.png b/custom/bird-sprite.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..c81cc90418889778eaf102955a3a3e7803df15fe
+GIT binary patch
+literal 5187
+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
+S9toy|q=<-;9eI0Y*1rL`CXCtu
+
+literal 0
+HcmV?d00001
+
+diff --git a/custom/title.txt b/custom/title.txt
+new file mode 100644
+index 0000000..96c1a4f
+--- /dev/null
++++ b/custom/title.txt
+@@ -0,0 +1 @@
++Flying Hat
